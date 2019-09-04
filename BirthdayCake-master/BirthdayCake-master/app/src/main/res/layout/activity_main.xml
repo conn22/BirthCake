@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -13,8 +14,9 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Happy Birthday"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
@@ -41,9 +43,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="fill_horizontal"
             android:orientation="vertical">
 
             <EditText
@@ -55,22 +64,44 @@
                 android:text="How many candles?"
                 android:textSize="14sp" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
             <SeekBar
                 android:id="@+id/candleBar"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="right"
             android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp" />
 
             <Switch
                 android:id="@+id/frostingSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Frosting" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2" />
 
             <Switch
                 android:id="@+id/candleSwitch"
@@ -79,9 +110,15 @@
                 android:text="Candles" />
         </LinearLayout>
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
             android:orientation="vertical">
 
             <Button
@@ -96,6 +133,11 @@
                 android:layout_height="wrap_content"
                 android:text="GOODBYE" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
 
     </LinearLayout>
 
