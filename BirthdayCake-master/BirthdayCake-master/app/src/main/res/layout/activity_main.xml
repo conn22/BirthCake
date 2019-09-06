@@ -73,7 +73,8 @@
                 android:id="@+id/candleBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="5" />
+                android:max="5"
+                android:progress="1" />
         </LinearLayout>
 
         <Space
@@ -127,15 +128,16 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/blowOutButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BLOW OUT" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/goodbyeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="goodbye"
                 android:text="GOODBYE" />
         </LinearLayout>
 
